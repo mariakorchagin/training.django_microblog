@@ -1,7 +1,6 @@
 from django import forms
-
 from djangor.models import Entry
-
+from ckeditor.widgets import CKEditorWidget
 
 class EntryForm(forms.ModelForm):
     """allow entry of title and text for a post
@@ -14,3 +13,4 @@ class EntryForm(forms.ModelForm):
     class Meta:
         model = Entry
         fields = ('title', 'text', )
+        widgets = {'text':CKEditorWidget()}

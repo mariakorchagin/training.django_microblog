@@ -120,6 +120,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'djangor',
+    'ckeditor',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -154,3 +155,4 @@ LOGGING = {
 
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
+CKEDITOR_UPLOAD_PATH = "/Users/dan/python2/ckeditor/uploads"
